@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #wrap {
+    width: 100%;
+    margin: auto;
+  }
+header {
+  background: #dddcd6;
+  color: #ee7800;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.main-menu {
+  background: #dddcd6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main-menu ul {
+    display: flex;
+  }
+  .main-menu ul li a {
+    color: #ee7800;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    transition-property: color;
+  transition-duration: .5s;
+}
+.main-menu ul li a :hover{
+    color: #e6e4e1;
+}
+
+  
+  
+  main {
+    display: flex;
+    color:#e6e4e1;
+    ;
+  font-family: 'Quicksand', sans-serif;
+  }
+
+  figure {
+    width: auto
+  }
+  .pic1 img {
+    border-radius: 20px;
+  }
+  
+  
+  
+section {
+  background: #e6e4e1;
+  ;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #e6e4e1;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #898880;
+  font-family: 'Quicksand', sans-serif;
+}  
+  main p {
+  background: #e6e4e1;
+  padding: 20px;
+  color: #898880;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+aside {
+  background: #e6e4e1;
+  flex: 1;
+}
+
+.sub-menu {
+  background:#e6e4e1;
+  ;
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .sub-menu ul li a:hover {
+    background: #666;
+  }
+footer {
+  background: #e6e4e1;
+  color: #898880;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+article img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+a{
+  color:inherit;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+a:hover {
+  color: #ee7800;
+}
+
+a:visited {
+  color: #ee7800;
+ }
+
+ a.pagetop {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+  border-radius: 25px;
+  background-color: #ee7800;
+  color: #e6e4e1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+}
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
